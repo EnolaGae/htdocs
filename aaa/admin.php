@@ -19,10 +19,11 @@
 <?php
 
 $meteo = ($_GET["temperature"]);
-$temperature = ($_GET["temperature"]);
+$humidite = ($_GET["humidite"]);
 $Ftexte = fopen("data/admin.txt","w");
-  fwrite($Ftexte, $meteo, $temperature);
-  fclose($Ftexte);
+fwrite($Ftexte, $meteo . "\n");
+fwrite($Ftexte, $humidite . "\n");
+fclose($Ftexte);
 //$_GET("meteo")&&$_GET("humidite");
 ?>
 
