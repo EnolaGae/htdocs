@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <h1>Admin tools</h1>
+  <h2>Changer la météo</h2>
   <title>Admin</title>
 </head>
 
@@ -15,7 +15,13 @@
     <button>
       Valider
     </button>
-
+    <h2>Créer un utilisateur</h2>
+    <form>
+      <input type="text" name="new_user" placeholder="Nouvel utilisateur" required> <br>
+      <input type="text" name="new_password" placeholder="Nouveau mot de passe" required> <br>
+    <button>
+      Valider
+    </button>
 <?php
 
 $meteo = ($_GET["temperature"]);
