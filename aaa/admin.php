@@ -7,14 +7,15 @@
 
 <body>
 
-  <form>
+  <form method="post">
 
     <input type="text" name="temperature" placeholder="Température" required> <br>
     <input type="text" name="humidite" placeholder="Humidité" required> <br>
-
+    <input type="submit">
     <button>
-      Valider
+      <input type="submit" />
     </button>
+  </form>
     <h2>Créer un utilisateur</h2>
     <form>
       <input type="text" name="new_user" placeholder="Nouvel utilisateur" required> <br>
@@ -32,8 +33,5 @@ fwrite($Ftexte, $humidite . "\n");
 fclose($Ftexte);
 //$_GET("meteo")&&$_GET("humidite");
 ?>
-
-
-
 </body>
 </html>
